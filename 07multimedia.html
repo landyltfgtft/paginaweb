@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMEDIA</title>
+</head>
+<body>
+    <center>
+        <h1>Multimedia</h1>
+        <br>
+        <h2><a href="index.html">REGRESAR</a></h2>
+        <h3>EJEMPLO VIDEO 1</h3>
+        <video width="640" height="360" controls autoplay muted loop poster="img/tim.jpg">
+            <source src="archivos/taylorswift.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <h3>EJEMPLO AUDIO 1</h3>
+        <audio controls autoplay loop>
+            <source src="archivos/taylorswift.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </center>
+
+    <h3>EJEMPLO VIDEO CON SUBTITULOS</h3>
+    <video width="640" height="360" controls loop poster="img/tim.jpg">
+  <source src="archivos/taylor2.mp4" type="video/mp4">
+  <track src="archivos/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+</video>
+
+        <h3>EJEMPLO IMAGEN CON RUTA RELATIVA</h3>
+        <img src="img/tim.jpg" alt="TIM BERNES LEE" width="400" height="300" border="10px">
+        <h3>IMAGEN CON RUTA ABSOLUTA</h3>
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Tim_Berners-Lee_at_the_2025_Web_Summit_%28Cropped%29.jpg/1280px-Tim_Berners-Lee_at_the_2025_Web_Summit_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Tim Berners-Lee" width="400" height="300">
+
+        <h3>EJEMPLO FIGURE</h3> 
+        <figure>
+            <img src="img/g25.jpg" alt="Sematica html">
+            <figcaption>Figura 1. Estructura semántica en HTML</figcaption>
+        </figure>
+
+        <h3>Ejemplo swf con EMBED</h3>
+<embed src="archivos/taylor.swf" width="400" height="300" type="application/x-shockwave-flash">
+
+
+
+
+        <h3>EJEMPLO CANVAS</h3>
+        <canvas id="miCanvas" width="300" height="200">
+        </canvas>
+
+        <script>
+            const ctx = document.getElementById('miCanvas').getContext('2d');
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(20, 20, 1500, 100);
+        </script>
+            
+
+        <h3>EJEMPLO SVG</h3>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+
+    <circle cx="50" cy="50" r="40" fill="green"/>
+  
+  <circle cx="55" cy="55" r="25" fill="#885A2B"/>
+  <circle cx="145" cy="55" r="25" fill="#885A2B"/>
+  <circle cx="55" cy="55" r="12" fill="#DAA679"/>
+  <circle cx="145" cy="55" r="12" fill="#DAA679"/>
+
+  
+  <circle cx="100" cy="110" r="70" fill="#A0522D"/>
+
+
+  <ellipse cx="100" cy="135" rx="35" ry="28" fill="#DAA679"/>
+
+  
+  <ellipse cx="100" cy="120" rx="10" ry="7" fill="#000"/>
+
+  
+  <path d="M100 127 Q100 140 140 140" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100 127 Q100 140 60 140" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  
+  <circle cx="75" cy="95" r="7" fill="#000"/>
+  <circle cx="125" cy="95" r="7" fill="#000"/>
+  <circle cx="77" cy="93" r="2" fill="#FFF"/>
+  <circle cx="127" cy="93" r="2" fill="#FFF"/>
+</svg>
+
+</body>
+</html>
