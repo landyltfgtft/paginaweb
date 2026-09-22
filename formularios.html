@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <center>
+        <h1>Formularios HTML</h1>
+        <h3><a href="index.html">REGRESAR</a></h3>
+        <table width="100%" border align="center">
+            <thead>
+                <tr align="center">
+                    <td><h3>NP</h3></td>
+                    <td><h3>Nombre</h3></td>
+                    <td><h3>Ejemplo</h3></td>
+                    <td><h3>Descripción</h3></td>
+                    <td><h3>Alumno</h3></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h3>1</h3></td>
+                    <td>optgroup</td>
+                    <td>
+                        <label for="">Carrera</label>
+                        <select name="carrera" id="">
+                            <optgroup label="Ingenierías">
+                                <option value="sistemas">Sistemas</option>
+                                <option value="industrial">Industrial</option>
+                            </optgroup>
+                            <optgroup label="Economico-Administrativas">
+                                <option value="">Contabilidad</option>
+                                <option value="">Administracion</option>
+                            </optgroup>
+                            <optgroup label="TECNOLOGICAS">
+                                <option value="">Contabilidad</option>
+                                <option value="">Administracion</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>Etiqueta que sirve para agrupar opciones dentro de una lista desplegable</td>
+                    <td>Esteban</td>
+                </tr>
+
+                <tr>
+                    <td><h3>2</h3></td>
+                    <td>meter</td>
+                    <td>
+                        <meter min="0" max="10" low="5" high="8" value="6.0" optimum="10" title="6.0 de 10"></meter>
+                    </td>
+                    <td>Muestra gráficamente un valor predeterminado</td>
+                    <td>Angel</td>
+                </tr>
+
+                <tr>
+    <td><h3>3</h3></td>
+    <td>label o etiqueta</td>
+    <td>
+        <br><br>
+        <label>
+            <input type="text" placeholder="escribe tu nombre">
+
+        </label>
+    </td>
+    <td>
+        Sirve para colocar texto estático dentro de un formulario como descripción y también muestra resultados.
+        <br>Se puede usar con el atributo for o envolviendo el input dentro del mismolabel.
+    </td>
+    <td>Jesus</td>
+</tr>
+
+                </tr>
+
+                <tr>
+    <td><h3>4</h3></td>
+    <td>checkbox</td>
+    <td>
+        <input type="checkbox" id="terminos" name="terminos" value="aceptado" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <br><br>
+    <td>
+        Permite seleccionar una o varias opciones dentro de un formulario.  
+    </td>
+    <td>Alexis</td>
+</tr>
+
+<tr>
+    <td><h3>5</h3></td>
+    <td>file</td>
+    <td>
+        <form enctype="multipart/form-data">
+            <label for="foto">Sube tu foto:</label>
+            <input type="file" id="foto" name="foto">
+            <input type="submit" value="Enviar">
+        </form>
+    </td>
+    <td>
+        Permite seleccionar y subir archivos desde el dispositivo del usuario.  
+    </td>
+    <td>Michelle</td>
+</tr>
+
+<tr>
+    <td><h3>6</h3></td>
+    <td>botón reset</td>
+    <td>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="reset" value="Limpiar">
+        </form>
+    </td>
+    <td>
+        Restablece los campos del formulario a sus valores iniciales.  
+    </td>
+    <td>Ximena</td>
+</tr>
+
+<tr>
+    <td><h3>7</h3></td>
+    <td>legend</td>
+    <td>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+            </fieldset>
+        </form>
+    </td>
+    <td>
+        Se usa junto con fieldset para agrupar campos relacionados y mostrar un título descriptivo.  
+    </td>
+    <td>Zoe</td>
+</tr>
+tr>
+    <td><h3>8</h3></td>
+    <td>range</td>
+    <td>
+        <form>
+            <label for="sueno">Horas de sueño:</label><br>
+            <input type="range" id="sueno" name="sueno" min="0" max="12" value="7"
+                   oninput="document.getElementById('res_sueno').innerText = this.value + ' horas'">
+            <strong><span id="res_sueno">7 horas</span></strong>
+            <br><br>
+        </form>
+    </td>
+    <td>
+        Permite seleccionar un valor deslizable dentro de un rango definido.  
+    </td>
+    <td>Abraham</td>
+</tr>
+
+<tr>
+    <td><h3>9</h3></td>
+    <td>datalist</td>
+    <td>
+        <form>
+            <label for="sistema">Sistema Operativo Principal:</label><br>
+            <input list="sistemas" id="sistema" name="sistema" placeholder="Ej. Ubuntu, Windows, macOS">
+            <datalist id="sistemas">
+                <option value="Windows">
+                <option value="Ubuntu">
+                <option value="macOS">
+                <option value="Linux Mint">
+                <option value="Debian">
+            </datalist>
+        </form>
+    </td>
+    <td>
+        Permite crear listas de opciones sugeridas para un campo de texto. 
+    </td>
+    <td>Regina</td>
+</tr>
+
+<tr>
+    <td><h3>10</h3></td>
+    <td>form</td>
+    <td>
+        <form action="" method="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </td>
+    <td>
+        El elemento form define un formulario HTML.  
+    </td>
+    <td>Charbel</td>
+</tr>
+
+
+<tr>
+    <td><h3>11</h3></td>
+    <td>date</td>
+    <td>
+        <form action="" method="get" autocomplete="on">
+            <label for="fecha">Selecciona una fecha:</label>
+            <input 
+                type="date" 
+                id="fecha" 
+                name="fecha" 
+                value="2026-09-21" 
+                min="2020-01-01" 
+                max="2030-12-31" 
+                step="1" 
+                required 
+                autofocus>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </td>
+    <td>
+        Permite al usuario seleccionar una fecha desde un calendario.  
+    </td>
+    <td>Yatzil</td>
+</tr>
+
+<tr>
+    <td><h3>12</h3></td>
+    <td>fieldset y legend</td>
+    <td>
+        <form id="formPrincipal">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre:</label>
+                <input type="text" name="nombre">
+            </fieldset>
+
+            <fieldset disabled="disabled">
+                <legend>Configuración avanzada</legend>
+                <label>Ruta del sistema:</label>
+                <input type="text" name="ruta" value="/var/www/html">
+                <input type="checkbox" name="forzar" checked> Forzar reinicio
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+        </form>
+    </td>
+    <td>
+        Agrupa campos relacionados dentro de un formulario y les da un título con legend.
+    </td>
+    <td>Gabriel</td>
+</tr>
+
+<tr>
+    <td><h3>13</h3></td>
+    <td>textarea</td>
+    <td>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+
+            <label for="comentario">Escribe tu comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="6" cols="40" placeholder="Escribe aquí tu comentario..."></textarea>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </td>
+    <td>
+        Permite al usuario escribir texto extenso, como mensajes o comentarios.  
+    </td>
+    <td>Natalia</td>
+</tr>
+<tr>
+    <td><h3>14</h3></td>
+    <td>select</td>
+    <td>
+        <form>
+            <label for="pais">Selecciona tu país:</label>
+            <select id="pais" name="pais">
+                <option value="mx">México</option>
+                <option value="es">España</option>
+                <option value="ar">Argentina</option>
+                <option value="co">Colombia</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </td>
+    <td>
+        Crea un menú desplegable con opciones predefinidas.  
+    </td>
+    <td>Mayte</td>
+</tr>
+
+<tr>
+    <td><h3>15</h3></td>
+    <td>color</td>
+    <td>
+        <form action="/guardar-datos">
+            <label for="color_usuario">Elige tu color:</label>
+            <input 
+                type="color" 
+                id="color_usuario" 
+                name="color_usuario" 
+                value="#ff0000" 
+                list="mis_colores" 
+                title="Haz clic para abrir la paleta de colores" 
+                autofocus>
+            <datalist id="mis_colores">
+                <option value="#ff0000">Rojo</option>
+                <option value="#00ff00">Verde</option>
+                <option value="#0000ff">Azul</option>
+            </datalist>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </td>
+    <td>
+        Permite seleccionar un color mediante una paleta visual.   
+    </td>
+    <td>Bryan </td>
+</tr>
+
+<tr>
+    <td><h3>16</h3></td>
+    <td>button</td>
+    <td>
+        <form>
+            <button type="button" onclick="alert('¡Hola!')">Haz clic aquí</button>
+        </form>
+    </td>
+    <td>
+        El elemento button crea un botón interactivo.  
+    </td>
+    <td>Nefertiti</td>
+</tr>
+
+
+<tr>
+    <td><h3>17</h3></td>
+    <td>url</td>
+    <td>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+            <label for="pagina">Tu página web (URL):</label><br>
+            <input type="url" id="pagina" name="pagina" placeholder="https://www.ejemplo.com" required><br><br>
+
+            <button type="submit">Guardar URL</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </td>
+    <td>
+        Permite ingresar una dirección web válida.  
+    </td>
+    <td>Santiago</td>
+</tr>
+
+<tr>
+    <td><h3>18</h3></td>
+    <td>number</td>
+    <td>
+        <form action="#" method="get" autocomplete="on">
+            <label for="numero">Ingresa un número:</label><br>
+            <input 
+                type="number" 
+                id="numero" 
+                name="numero" 
+                value="18" 
+                min="1" 
+                max="100" 
+                step="1" 
+                required 
+                placeholder="Escribe un número" 
+                autofocus 
+                autocomplete="off">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </td>
+    <td>
+        Permite ingresar solo valores numéricos.  
+    </td>
+    <td>Zuriel</td>
+</tr>
+
+<tr>
+    <td><h3>19</h3></td>
+    <td>hidden</td>
+    <td>
+        <h3>Mi página de ejemplo</h3>
+        <p style="font-size: 20px;">HTML</p>
+        <p hidden>Este párrafo está oculto con el atributo hidden</p>
+        <div hidden>
+            <h3>Este título también está oculto</h3>
+        </div>
+    </td>
+    <td>
+        El atributo hidden oculta elementos del documento sin borrarlos del código.  
+    </td>
+    <td>Jesus</td>
+</tr>
+
+<tr>
+    <td><h3>20</h3></td>
+    <td>radio</td>
+    <td>
+        <form>
+            <strong>Sexo:</strong><br><br>
+            <input type="radio" name="sexo" value="Masculino" required> Masculino<br><br>
+            <input type="radio" name="sexo" value="Femenino"> Femenino
+        </form>
+    </td>
+    <td>
+        Permite seleccionar una opción única dentro de un grupo de alternativas.  
+    </td>
+    <td>Ian</td>
+</tr>
+
+<tr>
+    <td><h3>21</h3></td>
+    <td>submit</td>
+    <td>
+        <hr>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <button type="submit">Enviar datos</button>
+        </form>
+    </td>
+    <td>
+        El botón submit envía los datos del formulario al servidor.  
+    </td>
+    <td>Carlos</td>
+</tr>
+
+<tr>
+    <td><h3>22</h3></td>
+    <td>email</td>
+    <td>
+        <form>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="usuario@correo.com" required>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </td>
+    <td>
+        Permite ingresar direcciones de correo válidas.  
+    </td>
+    <td>Sebastian</td>
+</tr>
+
+<tr>
+    <td><h3>23</h3></td>
+    <td>time</td>
+    <td>
+        <form>
+            <label for="hora">Selecciona la hora:</label>
+            <input type="time" id="hora" name="hora" value="09:00" min="09:00" max="18:00" required>
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </td>
+    <td>
+        Permite elegir una hora en formato 24 h.  
+    </td>
+    <td>Alexis</td>
+</tr>
+
+<tr>
+    <td><h3>24</h3></td>
+    <td>text</td>
+    <td>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </td>
+    <td>
+        Permite escribir texto libre en un campo.  
+    </td>
+    <td>Julieta</td>
+</tr>
+
+<tr>
+    <td><h3>25</h3></td>
+    <td>tel</td>
+    <td>
+        <form>
+            <label for="telefono">Teléfono:</label>
+            <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                placeholder="Ej. 5512345678" 
+                minlength="10" 
+                maxlength="10" 
+                pattern="[0-9]{10}" 
+                required 
+                autocomplete="tel">
+        </form>
+    </td>
+    <td>
+        Permite ingresar números telefónicos.  
+    </td>
+    <td>Alexander</td>
+</tr>
+
+<tr>
+    <td><h3>26</h3></td>
+    <td>progress + script</td>
+    <td>
+        <progress id="barra" value="0" max="100"></progress><br><br>
+        <button onclick="aumentar()">Agregar 10%</button>
+        <button onclick="disminuir()">Disminuir 10%</button>
+
+        <script>
+            function aumentar(){
+                let barra = document.getElementById("barra");
+                if(barra.value < 100) barra.value += 10;
+            }
+            function disminuir(){
+                let barra = document.getElementById("barra");
+                if(barra.value > 0) barra.value -= 10;
+            }
+        </script>
+    </td>
+    <td>
+        Muestra una barra de progreso que cambia dinámicamente con JavaScript.  
+    </td>
+    <td>Dylan</td>
+</tr>
+
+<tr>
+    <td><h3>27</h3></td>
+    <td>password</td>
+    <td>
+        <form>
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" placeholder="Escribe tu contraseña" required>
+            <br><br>
+            <input type="submit" value="Ingresar">
+        </form>
+    </td>
+    <td>
+        Permite escribir contraseñas ocultando los caracteres con puntos o asteriscos.  
+    </td>
+    <td>Hector</td>
+</tr>
+
+<tr>
+    <td><h3>28</h3></td>
+    <td>month</td>
+    <td>
+        <form>
+            <label for="mes">Selecciona el mes:</label>
+            <input type="month" id="mes" name="mes" value="2026-09" required>
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </td>
+    <td>
+        Permite elegir un mes y año en formato calendario.  
+    </td>
+    <td>Emilio</td>
+</tr>
+
+<tr>
+    <td><h3>29</h3></td>
+    <td>output</td>
+    <td>
+        <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+            <label for="a">Número 1:</label>
+            <input type="number" id="a" value="0">
+            <br><br>
+            <label for="b">Número 2:</label>
+            <input type="number" id="b" value="0">
+            <br><br>
+            <label>Resultado:</label>
+            <output name="resultado" for="a b">0</output>
+        </form>
+    </td>
+    <td>
+        El elemento output muestra la salida de información calculada.  
+    </td>
+    <td>Abril</td>
+</tr>
+
+<tr>
+    <td><h3>30</h3></td>
+    <td>week</td>
+    <td>
+        <form>
+            <label for="semana">Selecciona la semana:</label>
+            <input type="week" id="semana" name="semana" value="2026-W38" required>
+            <br><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </td>
+    <td>
+        Permite elegir una semana completa en el calendario.  
+    </td>
+    <td>Diego</td>
+</tr>
+
+<tr>
+    <td><h3>31</h3></td>
+    <td>search</td>
+    <td>
+        <input type="text" id="search" placeholder="Buscar...">
+        <button onclick="buscar()">Buscar</button>
+
+        <script>
+            function buscar() {
+                let query = document.getElementById("search").value;
+                alert("Buscando: " + query);
+            }
+        </script>
+    </td>
+    <td>
+        Permite ingresar texto para realizar búsquedas.  
+    </td>
+    <td>Alfonso</td>
+</tr>
+
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
