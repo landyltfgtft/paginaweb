@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras</title>
+</head>
+<body>
+    <h2><a href="index.html">REGRESAR</a></h2>
+    <center>
+        <h1>Otras Etiquetas</h1>
+        <h3><a href="index.html">REGRESAR</a></h3>
+        <table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Etiqueta</th>
+    <th>Para qué sirve</th>
+    <th>Ejemplo</th>
+  </tr>
+
+  <tr>
+    <td>dialog</td>
+    <td>Crea un cuadro de diálogo modal o emergente dentro de la página.</td>
+    <td>
+      <dialog id="miDialogo">
+        <p>Este es un mensaje en un cuadro de diálogo.</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+      <button onclick="document.getElementById('miDialogo').showModal()">Abrir diálogo</button>
+    </td>
+  </tr>
+  <tr>
+    <td>blockquote</td>
+    <td>Se usa para citar un texto de otra fuente.</td>
+    <td>
+      <blockquote>
+        "La educación es el arma más poderosa para cambiar el mundo." – Nelson Mandela
+      </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>abbr</td>
+    <td>Define una abreviatura o acrónimo con su significado.</td>
+    <td>
+      <p>Estudio <abbr title="HyperText Markup Language">HTML</abbr> todos los días.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>wbr</td>
+    <td>Indica un posible punto de salto de línea en palabras largas.</td>
+    <td>
+      <p>EstaPalabraMuyLarga<wbr>SePuedeRomperAquí</p>
+    </td>
+  </tr>
+  <tr>
+    <td>address</td>
+    <td>Representa información de contacto, como dirección o autor.</td>
+    <td>
+      <address>
+        Escrito por Zoe<br>
+        Tecámac, México<br>
+        <a href="mailto:zoe@example.com">zoe@example.com</a>
+      </address>
+    </td>
+  </tr>
+
+  <tr>
+    <td>kbd</td>
+    <td>Representa la entrada del teclado que el usuario debe presionar.</td>
+    <td>
+      <p>Presiona <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>samp</td>
+    <td>Muestra la salida de un programa o sistema.</td>
+    <td>
+      <p>Resultado: <samp>Error 404: Página no encontrada</samp></p>
+    </td>
+  </tr>
+  <tr>
+    <td>var</td>
+    <td>Indica una variable en un contexto matemático o de programación.</td>
+    <td>
+      <p>La fórmula es: <var>x</var> + <var>y</var> = <var>z</var></p>
+    </td>
+  </tr>
+  <tr>
+    <td>ruby</td>
+    <td>Se usa para mostrar anotaciones o pronunciaciones de caracteres (muy común en japonés o chino).</td>
+    <td>
+      <ruby>漢 <rt>kan</rt></ruby>
+    </td>
+  </tr>
+
+  <tr>
+    <td>meta</td>
+    <td>Define metadatos de la página, como descripción, autor o codificación.</td>
+    <td>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ejemplo de metadatos en HTML">
+      </head>
+    </td>
+  </tr>
+  <tr>
+    <td>style</td>
+    <td>Permite definir reglas de estilo CSS dentro del documento HTML.</td>
+    <td>
+      <style>
+        body { background-color: #f0f0f0; }
+        p { color: blue; font-size: 18px; }
+      </style>
+    </td>
+  </tr>
+
+  <tr>
+    <td>script</td>
+    <td>Permite incluir o enlazar código JavaScript para dar interactividad a la página.</td>
+    <td>
+      <script>
+        function saludar() {
+          alert("¡Hola Zoe!");
+        }
+      </script>
+      <button onclick="saludar()">Haz clic aquí</button>
+    </td>
+  </tr>
+  <tr>
+    <td>bdi</td>
+    <td>Aísla un texto para que se muestre correctamente aunque tenga una dirección de escritura distinta.</td>
+    <td>
+      <p>Usuario: <bdi>مرحبا</bdi></p>
+      <p>Usuario: <bdi>Zoe</bdi></p>
+    </td>
+  </tr>
+<tr>
+    <td>&lt;cite&gt;</td>
+    <td>Define el título de una obra creativa, libro, película o canción.</td>
+    
+    <td><cite>Cien años de soledad</cite></td>
+    
+</tr>
+
+<tr>
+
+    
+    <td>&lt;dfn&gt;</td>
+    <td>Indica el término que se está definiendo dentro de una oración.</td>
+    <td><dfn>HTML</dfn> es el lenguaje de marcado estándar.</td>
+    
+</tr>
+
+<tr>
+    
+    <td>&lt;q&gt;</td>
+    <td>Crea una cita textual corta entrecomillada en línea.</td>
+    <td>El profesor dijo: <q>Estudien para el examen</q>.</td>
+    
+</tr>
+
+<tr>
+    
+    <td>&lt;bdo&gt;</td>
+    <td>Cambia la dirección del texto (por ejemplo, para escribir de derecha a izquierda).</td>
+    <td><bdo dir="rtl">Texto al revés</bdo></td>
+    
+</tr>
+
+<tr>
+
+    <td>&lt;s&gt;</td>
+    <td>Muestra texto que ya no es correcto, relevante o válido (tachado comercial).</td>
+    <td><s>Precio: $500</s> ¡Hoy $300!</td>
+    
+</tr>
+
+<tr>
+   
+    <td>&lt;noscript&gt;</td>
+    <td>Muestra un mensaje alternativo si el usuario tiene desactivado JavaScript.</td>
+    <td><span>Tu navegador no soporta JavaScript.</span></td>
+    
+</tr>
+
+<tr>
+    
+    <td>&lt;template&gt;</td>
+    <td>Contenedor de código HTML que no se renderiza hasta que se activa con JavaScript.</td>
+    <td><span>(Contenido oculto para clonar)</span></td>
+    
+</tr>
+</table>
+
+    </center>
+</body>
+</html>
